@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 app.use(express.json());
-mongoose.connect('mongodb+srv://Admin:xmJ6vbcQWMz1VDqS@tushar.tfswps0.mongodb.net/?retryWrites=true&w=majority&appName=Tushar')
+mongoose.connect('your-mongodb-url')
 
 const User = mongoose.model('Users', { name: String, email: String , password:String });
 
